@@ -1,25 +1,221 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Executive Briefing | Breakthru AI Solutions</title>
-    <!-- Tailwind CDN -->
+    <title>Executive POV: Digital Transformation | Breakthru AI Solutions</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
         .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
-        .accent-border { border-left: 4px solid #3b82f6; }
         .card-hover:hover { transform: translateY(-4px); transition: all 0.3s ease; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900 antialiased">
+<body class="bg-gray-50 text-slate-900 leading-relaxed">
 
-    <!-- DATA INJECTION -->
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 py-4 shadow-sm">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <img src="https://media.licdn.com/dms/image/v2/D560BAQGK5LZPW7pxKQ/company-logo_200_200/B56ZmuIOdXIYAI-/0/1759563016551/breakthru_ai_solutions_logo?e=1770249600&v=beta&t=lZwBUcVhI2YUcOe5sRLm1KS2fxxhU-MPdj0kN1jdjXo" 
+                 alt="Breakthru AI Solutions" class="h-12 w-auto">
+            
+            <div id="customer-logo-container">
+                <img src="" alt="Customer Logo" id="customer-logo" class="h-12 w-auto object-contain hidden">
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-24">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl">
+                <p class="uppercase tracking-widest text-blue-400 font-semibold mb-4 text-sm">Strategic Executive POV</p>
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                    Accelerating <span id="company-name-hero">Your Organization</span>’s Digital Transformation
+                </h1>
+                <p class="text-xl text-slate-300 mb-8 max-w-2xl" id="hero-subheadline">
+                    A roadmap for bridging the gap between legacy operational complexity and future-ready AI-driven resilience.
+                </p>
+                <div class="flex gap-4">
+                    <a href="https://breakthru.ai/" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-md font-medium transition-colors">Contact Strategy Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Customer -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-12 items-start">
+                <div class="md:w-1/3">
+                    <h2 class="text-3xl font-bold text-slate-900 border-l-4 border-blue-600 pl-4">Organizational Context</h2>
+                </div>
+                <div class="md:w-2/3">
+                    <p class="text-lg text-slate-600 mb-6" id="company-about">
+                        As a significant player in the enterprise landscape, your organization navigates a complex ecosystem of operational demands and technological requirements. Understanding your scale and market position is central to defining a high-impact digital strategy.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                        <div class="p-6 bg-slate-50 rounded-lg">
+                            <h4 class="font-bold text-slate-900 mb-2">Industry Scope</h4>
+                            <p id="industry-display" class="text-slate-600 italic">Enterprise Operations</p>
+                        </div>
+                        <div class="p-6 bg-slate-50 rounded-lg">
+                            <h4 class="font-bold text-slate-900 mb-2">Operating Scale</h4>
+                            <p id="scale-display" class="text-slate-600 italic">Global / Multi-region</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges Section -->
+    <section class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Digital & Operational Challenges</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Identifying the core friction points that typically impede agility and scale within large-scale enterprises.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="challenges-grid">
+                <!-- Data Silos -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200 card-hover">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Siloed Data Architecture</h3>
+                    <p class="text-slate-600">Fragmented data across disparate systems prevents a unified "source of truth," complicating executive decision-making.</p>
+                </div>
+                <!-- Technical Debt -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200 card-hover">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Legacy Complexity</h3>
+                    <p class="text-slate-600">Inherited technology debt creates operational friction, slowing the adoption of modern AI and automation workflows.</p>
+                </div>
+                <!-- Cost Optimization -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200 card-hover">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Cost Inefficiency</h3>
+                    <p class="text-slate-600">Lack of cloud and operational transparency leads to under-optimized technology spend and high maintenance costs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capabilities -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-16 text-center">Breakthru AI Core Capabilities</h2>
+            
+            <div class="space-y-24">
+                <!-- Capability 1 -->
+                <div class="flex flex-col md:flex-row gap-16 items-center">
+                    <div class="md:w-1/2">
+                        <span class="text-blue-600 font-bold tracking-tighter text-sm uppercase">Focus Area 01</span>
+                        <h3 class="text-3xl font-bold mt-2 mb-6 text-slate-900">Digital Transformation & AI Enablement</h3>
+                        <p class="text-lg text-slate-600 mb-6">We don't just implement tools; we reshape how your enterprise thinks about data and intelligence. Our AI frameworks are designed for high-governance environments where security and precision are non-negotiable.</p>
+                        <ul class="space-y-3 text-slate-700">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Enterprise-grade AI strategy</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Scalable transformation roadmaps</li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 bg-slate-900 h-64 rounded-2xl flex items-center justify-center text-slate-700 font-mono italic">
+                        [Intelligence Architecture visualization]
+                    </div>
+                </div>
+
+                <!-- Capability 2 -->
+                <div class="flex flex-col md:flex-row-reverse gap-16 items-center">
+                    <div class="md:w-1/2">
+                        <span class="text-blue-600 font-bold tracking-tighter text-sm uppercase">Focus Area 02</span>
+                        <h3 class="text-3xl font-bold mt-2 mb-6 text-slate-900">Intelligent Operations & Automation</h3>
+                        <p class="text-lg text-slate-600 mb-6">Operational resilience is the byproduct of visibility. We deploy advanced automation layers that reduce human-intensive workflows, allowing your talent to focus on high-value strategic initiatives.</p>
+                        <ul class="space-y-3 text-slate-700">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Process hyper-automation</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Cost optimization signals & response</li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 bg-slate-100 h-64 rounded-2xl flex items-center justify-center text-slate-400 font-mono italic">
+                        [Automation Workflow visualization]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personalized Summary Section -->
+    <section class="py-20 bg-blue-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-white p-12 rounded-3xl shadow-xl border border-blue-100">
+                <h2 class="text-3xl font-bold mb-8 text-center text-slate-900">What This Means for <span id="company-name-personal">Your Organization</span></h2>
+                <div class="prose prose-lg text-slate-600 mx-auto">
+                    <p class="mb-6" id="personalization-text">
+                        For an organization in the <span class="font-semibold text-blue-600">[Industry Focus]</span> sector, the stakes of digital transformation extend beyond efficiency—they are about competitive resilience. By addressing inferred cost centers and operational complexity, Breakthru AI Solutions positions itself as a strategic partner to help you pivot from reactive maintenance to proactive innovation.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <h5 class="font-bold text-slate-900">Strategic Alignment</h5>
+                            <p class="text-sm">Matching your technology roadmap with CIO/CTO priorities for maximum ROI.</p>
+                        </div>
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <h5 class="font-bold text-slate-900">Future-Proofing</h5>
+                            <p class="text-sm">Building modular architectures that adapt to evolving AI and compliance standards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact/ROI Section -->
+    <section class="py-20 bg-slate-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold">Value & Business Impact</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                <div>
+                    <div class="text-5xl font-bold text-blue-400 mb-2 font-mono">Agility</div>
+                    <p class="text-slate-400">Faster digital execution and rapid prototyping of AI capabilities.</p>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold text-blue-400 mb-2 font-mono">Efficiency</div>
+                    <p class="text-slate-400">Reduced technology waste and optimized infrastructure spend.</p>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold text-blue-400 mb-2 font-mono">Visibility</div>
+                    <p class="text-slate-400">Better governance and executive visibility into operational silos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-12">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-8 md:mb-0">
+                <img src="https://media.licdn.com/dms/image/v2/D560BAQGK5LZPW7pxKQ/company-logo_200_200/B56ZmuIOdXIYAI-/0/1759563016551/breakthru_ai_solutions_logo?e=1770249600&v=beta&t=lZwBUcVhI2YUcOe5sRLm1KS2fxxhU-MPdj0kN1jdjXo" 
+                     alt="Breakthru AI" class="h-10 mb-4">
+                <p class="text-slate-500 text-sm">Prepared exclusively for <span id="footer-company-name">Your Organization</span></p>
+                <p class="text-slate-400 text-xs mt-2">© 2024 Breakthru AI Solutions. All rights reserved.</p>
+            </div>
+            <div class="flex gap-8 items-center">
+                <a href="https://breakthru.ai/" class="text-slate-600 hover:text-blue-600 font-medium">Main Website</a>
+                <a href="https://breakthru.ai/" class="bg-slate-900 text-white px-6 py-2 rounded text-sm hover:bg-slate-800 transition-colors">Request Deep Dive</a>
+            </div>
+        </div>
+    </footer>
+
     <script>
+        // Data Input Object
         const companyData = {
   "companyIdentity": {
     "name": "",
@@ -62,260 +258,44 @@
     "brandTone": "",
     "websiteKeywords": [],
     "confidence": "low"
+  },
+  "dataLineage": {
+    "agentCount": 0,
+    "fieldsConfirmedByMultipleAgents": [],
+    "fieldsWithConflicts": [],
+    "fieldsPrimarilyInferred": []
   }
 };
 
-        // Fallback Helper
-        const getVal = (val, fallback) => (val && val.length > 0 && val !== "" ? val : fallback);
-        const name = getVal(companyData.companyIdentity.name, "Your Organization");
-    </script>
-
-    <!-- Header / Hero Section -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <img src="https://media.licdn.com/dms/image/v2/D560BAQGK5LZPW7pxKQ/company-logo_200_200/B56ZmuIOdXIYAI-/0/1759563016551/breakthru_ai_solutions_logo?e=1770249600&v=beta&t=lZwBUcVhI2YUcOe5sRLm1KS2fxxhU-MPdj0kN1jdjXo" alt="Breakthru AI Solutions" class="h-12">
-            <script>
-                if (companyData.companyIdentity.CompanyLogoURL) {
-                    document.write(`<img src="${companyData.companyIdentity.CompanyLogoURL}" alt="${name} Logo" class="h-10 grayscale hover:grayscale-0 transition duration-300">`);
-                }
-            </script>
-        </div>
-    </header>
-
-    <section class="hero-gradient text-white py-24 px-6">
-        <div class="max-w-5xl mx-auto">
-            <p class="text-blue-400 font-semibold tracking-widest uppercase mb-4 text-sm">Strategic Partnership Brief</p>
-            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-8">
-                Accelerating <span id="hero-company-name"></span>’s Digital Transformation
-            </h1>
-            <p class="text-xl text-slate-300 max-w-3xl leading-relaxed font-light">
-                A tailored point-of-view on navigating operational complexity and unlocking enterprise value through intelligent AI integration and technical excellence.
-            </p>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="py-20 px-6 max-w-7xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-                <h2 class="text-3xl font-bold mb-6 text-slate-800 tracking-tight">Enterprise Context</h2>
-                <div class="space-y-4 text-slate-600 leading-relaxed text-lg">
-                    <p id="about-content">
-                        As a significant player in the <span class="font-semibold" id="about-industry">global market</span>, your organization manages sophisticated operations that require seamless alignment between technology infrastructure and business outcomes.
-                    </p>
-                    <p id="about-complexity">
-                        Managing scale in a digital-first economy demands a shift from legacy maintenance to proactive innovation.
-                    </p>
-                </div>
-            </div>
-            <div class="bg-slate-100 p-8 rounded-2xl border border-slate-200">
-                <div class="grid grid-cols-2 gap-6">
-                    <div>
-                        <p class="text-xs uppercase font-bold text-slate-400 mb-1">Sector</p>
-                        <p id="stat-sector" class="font-medium text-slate-800 italic">Enterprise</p>
-                    </div>
-                    <div>
-                        <p class="text-xs uppercase font-bold text-slate-400 mb-1">Operational Scope</p>
-                        <p id="stat-region" class="font-medium text-slate-800">Global / Multi-region</p>
-                    </div>
-                    <div>
-                        <p class="text-xs uppercase font-bold text-slate-400 mb-1">Maturity Focus</p>
-                        <p id="stat-maturity" class="font-medium text-slate-800">Operational Excellence</p>
-                    </div>
-                    <div>
-                        <p class="text-xs uppercase font-bold text-slate-400 mb-1">Priority</p>
-                        <p class="font-medium text-slate-800">Scalable ROI</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Challenges Section -->
-    <section class="py-20 bg-slate-100 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="mb-12">
-                <h2 class="text-3xl font-bold text-slate-800">The Modern Digital Mandate</h2>
-                <p class="text-slate-500 mt-2">Critical challenges facing organizations at your scale and complexity.</p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="challenge-grid">
-                <!-- Points will be injected or fall back -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Capabilities Section -->
-    <section class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold text-slate-800 mb-4 tracking-tight">Strategic Enablement by Breakthru AI</h2>
-            <p class="text-slate-500 max-w-2xl mx-auto">We bridge the gap between complex legacy environments and the future of intelligent operations.</p>
-        </div>
-
-        <div class="space-y-24">
-            <!-- Cap 1 -->
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="flex-1">
-                    <div class="bg-blue-100 text-blue-700 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4">Digital Transformation & AI Enablement</h3>
-                    <p class="text-slate-600 mb-6 leading-relaxed">
-                        Transitioning from manual workflows to AI-augmented processes requires more than just software; it requires a strategic framework. Breakthru AI maps your existing value chain to identify where generative and predictive models can drive the highest immediate impact.
-                    </p>
-                    <ul class="space-y-3 text-slate-700 font-medium">
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> AI Readiness & Maturity Assessment</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Intelligent Workflow Engineering</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Seamless LLM Integration</li>
-                    </ul>
-                </div>
-                <div class="flex-1 bg-slate-900 rounded-2xl p-8 text-blue-200">
-                    <p class="text-sm font-bold text-blue-400 uppercase tracking-wider mb-4">Outcome Focus</p>
-                    <p class="text-xl italic">"Achieving a 30-40% reduction in manual processing time while increasing data accuracy and decision-making velocity."</p>
-                </div>
-            </div>
-
-            <!-- Cap 2 -->
-            <div class="flex flex-col md:flex-row-reverse items-center gap-12">
-                <div class="flex-1">
-                    <div class="bg-emerald-100 text-emerald-700 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.58 4 8 4s8-1.79 8-4M4 7c0-2.21 3.58-4 8-4s8 1.79 8 4m0 5c0 2.21-3.58 4-8 4s-8-1.79-8-4"/></svg>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4">Data, Cloud & Platform Optimization</h3>
-                    <p class="text-slate-600 mb-6 leading-relaxed">
-                        Legacy technical debt and fragmented data silos are the primary barriers to AI adoption. We modernize your underlying infrastructure to ensure it is resilient, secure, and ready to power the next generation of digital services.
-                    </p>
-                    <ul class="space-y-3 text-slate-700 font-medium">
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div> Cloud-Native Re-platforming</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div> Governance & Security Hardening</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div> Real-time Data Architecture</li>
-                    </ul>
-                </div>
-                <div class="flex-1 bg-slate-900 rounded-2xl p-8 text-emerald-200">
-                    <p class="text-sm font-bold text-emerald-400 uppercase tracking-wider mb-4">Outcome Focus</p>
-                    <p class="text-xl italic">"Eliminating redundant technology costs and establishing a 'Single Source of Truth' for executive visibility."</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- "What This Means for..." Section -->
-    <section class="py-24 bg-slate-900 text-white px-6">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl font-bold mb-8">Personalized Strategic Outlook for <span class="text-blue-400" id="personalization-name"></span></h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="accent-border pl-6 py-2">
-                    <h4 class="text-lg font-semibold mb-2">Industry Specificity</h4>
-                    <p id="personalization-industry" class="text-slate-400 leading-relaxed">
-                        Within your sector, the competitive advantage is no longer just about scale—it's about the speed of response to market shifts. Breakthru AI ensures your technology stack acts as an accelerator rather than a friction point.
-                    </p>
-                </div>
-                <div class="accent-border pl-6 py-2">
-                    <h4 class="text-lg font-semibold mb-2">Cost Optimization Center</h4>
-                    <p id="personalization-cost" class="text-slate-400 leading-relaxed">
-                        By addressing implied operational complexities, we position your IT budget to shift from "run" to "grow," targeting areas with high manual overhead and technical redundancy.
-                    </p>
-                </div>
-            </div>
-            <div class="mt-16 pt-12 border-t border-slate-800">
-                <p class="text-xl font-light italic text-slate-300">
-                    "Our objective is to serve as a strategic partner—not just a vendor—aligning every technical initiative with <span id="partner-company-name"></span>’s long-term business resilience and ROI."
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Value & Impact Summary -->
-    <section class="py-24 px-6 max-w-7xl mx-auto text-center">
-        <h2 class="text-3xl font-bold text-slate-800 mb-12">Targeted Business Outcomes</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="p-8 bg-white border border-slate-200 rounded-xl shadow-sm">
-                <div class="text-4xl font-bold text-blue-600 mb-2">Efficiency</div>
-                <p class="text-slate-500">Optimized workflows and reduced manual intervention across core operations.</p>
-            </div>
-            <div class="p-8 bg-white border border-slate-200 rounded-xl shadow-sm">
-                <div class="text-4xl font-bold text-blue-600 mb-2">Visibility</div>
-                <p class="text-slate-500">Real-time executive dashboards providing governance and clarity across the digital estate.</p>
-            </div>
-            <div class="p-8 bg-white border border-slate-200 rounded-xl shadow-sm">
-                <div class="text-4xl font-bold text-blue-600 mb-2">Scale</div>
-                <p class="text-slate-500">A future-proof infrastructure capable of supporting rapid expansion and AI integration.</p>
-            </div>
-        </div>
-        <div class="mt-16">
-            <a href="https://breakthru.ai/" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-700 transition duration-300 shadow-lg shadow-blue-200">
-                Contact Strategy Team
-            </a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-white border-t border-slate-200 py-12 px-6">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-            <img src="https://media.licdn.com/dms/image/v2/D560BAQGK5LZPW7pxKQ/company-logo_200_200/B56ZmuIOdXIYAI-/0/1759563016551/breakthru_ai_solutions_logo?e=1770249600&v=beta&t=lZwBUcVhI2YUcOe5sRLm1KS2fxxhU-MPdj0kN1jdjXo" alt="Breakthru AI Solutions" class="h-10">
-            <div class="text-slate-400 text-sm font-medium">
-                Prepared exclusively for <span id="footer-company-name"></span> &copy; 2024 Breakthru AI Solutions
-            </div>
-            <div class="flex gap-6 text-sm font-semibold text-slate-600">
-                <a href="https://breakthru.ai/" class="hover:text-blue-600">Website</a>
-                <a href="#" class="hover:text-blue-600">Insights</a>
-                <a href="#" class="hover:text-blue-600">Executive Portal</a>
-            </div>
-        </div>
-    </footer>
-
-    <script>
         $(document).ready(function() {
-            // Populate Dynamic Names
-            const displayName = name;
-            $('#hero-company-name, #personalization-name, #partner-company-name, #footer-company-name').text(displayName);
+            // Populate Name
+            const name = companyData.companyIdentity.name || "Your Organization";
+            $('#company-name-hero, #company-name-personal, #footer-company-name').text(name);
 
-            // Populate About/Industry
-            const industry = getVal(companyData.industryFocus.primaryIndustry, "Modern Enterprise");
-            $('#about-industry').text(industry);
-            $('#stat-sector').text(industry);
-            
-            if (companyData.businessOverview.whatTheyDo) {
-                $('#about-content').text(companyData.businessOverview.whatTheyDo);
-            }
-            
-            const maturity = getVal(companyData.technologyAndOperations.digitalMaturity, "Growth & Optimization");
-            $('#stat-maturity').text(maturity);
-
-            // Populate Challenges
-            let challenges = companyData.costOptimizationSignals.impliedBusinessChallenges || [];
-            if (challenges.length === 0) {
-                challenges = [
-                    "Operational Friction: Navigating fragmented data silos and legacy system constraints.",
-                    "Scalability Bottlenecks: Difficulty in maintaining performance during rapid digital growth.",
-                    "Technical Debt: Resource allocation focused on maintenance rather than innovation.",
-                    "AI Integration Gap: Challenges in moving from AI experimentation to production-grade ROI.",
-                    "Security & Governance: Balancing open innovation with enterprise-grade risk management.",
-                    "Cost Optimization: Identifying and reclaiming wasted technology spend across the enterprise."
-                ];
+            // Populate Logo
+            if(companyData.companyIdentity.CompanyLogoURL) {
+                $('#customer-logo').attr('src', companyData.companyIdentity.CompanyLogoURL).removeClass('hidden');
             }
 
-            const challengeGrid = $('#challenge-grid');
-            challenges.forEach(challenge => {
-                const parts = challenge.split(':');
-                const title = parts.length > 1 ? parts[0] : "Strategic Challenge";
-                const desc = parts.length > 1 ? parts[1] : parts[0];
-                
-                challengeGrid.append(`
-                    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm card-hover">
-                        <h4 class="font-bold text-slate-800 mb-2">${title}</h4>
-                        <p class="text-slate-600 text-sm leading-relaxed">${desc}</p>
-                    </div>
-                `);
-            });
-
-            // Personalization logic
-            if (companyData.industryFocus.primaryIndustry) {
-                $('#personalization-industry').text(`As a leader in ${companyData.industryFocus.primaryIndustry}, your focus on ${getVal(companyData.industryFocus.operationalFocusAreas[0], 'innovation')} requires a technology partner who understands your specific market dynamics and regulatory environment.`);
+            // Populate Industry/Context
+            if(companyData.industryFocus.primaryIndustry) {
+                $('#industry-display').text(companyData.industryFocus.primaryIndustry);
+                $('#personalization-text').html(`For an organization in the <span class="font-semibold text-blue-600">${companyData.industryFocus.primaryIndustry}</span> sector, the stakes of digital transformation extend beyond efficiency—they are about competitive resilience. By addressing your unique operational complexity, Breakthru AI Solutions positions itself as a strategic partner to help you pivot from reactive maintenance to proactive innovation.`);
             }
 
-            if (companyData.costOptimizationSignals.likelyHighCostAreas.length > 0) {
-                $('#personalization-cost').text(`We have identified ${companyData.costOptimizationSignals.likelyHighCostAreas.join(', ')} as potential areas for optimization. Our approach targets these specific cost centers to drive immediate bottom-line impact.`);
+            // Populate About text
+            if(companyData.businessOverview.whatTheyDo) {
+                $('#company-about').text(companyData.businessOverview.whatTheyDo);
+            }
+
+            // Populate Complexity/Scale
+            if(companyData.companyIdentity.countryOrRegion) {
+                $('#scale-display').text(companyData.companyIdentity.countryOrRegion + " Operations");
+            }
+
+            // Hero Subheadline Update
+            if(companyData.industryFocus.primaryIndustry) {
+                $('#hero-subheadline').text(`Transforming ${companyData.industryFocus.primaryIndustry} through intelligent operations, cloud optimization, and data-driven agility.`);
             }
         });
     </script>
